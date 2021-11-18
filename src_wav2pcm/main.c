@@ -21,7 +21,8 @@ int main(int argc, char *argv[])
 
     if(argc != 3)
     {
-        printf("Usage: %s input.wav output.pcm\n", argv[0]);
+        printf("Usage: %s <input.wav> <output.pcm>\n", argv[0]);
+		printf("such as: %s ./audio/test_8000_16_1.wav ./out_8000_16_1.pcm\n", argv[0]);
         return -1;
     }
 

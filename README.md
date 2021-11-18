@@ -14,17 +14,18 @@ $ ls -l pcm2wav wav2pcm 	# 编译生成的文件
 ### 3、使用
 
 ```bash
-$ ./pcm2wav ./audio/test.pcm 8000 16 1 test.wav
-$ ./wav2pcm test.wav test.pcm
+$ ./pcm2wav ./audio/test_8000_16_1.pcm 8000 16 1 ./out_8000_16_1.wav
+$ ./wav2pcm ./audio/test_8000_16_1.wav ./out_8000_16_1.pcm
 ```
 
 ### 附录：目录架构
 
-```
+```bash
 .
 ├── audio
-│   ├── test.pcm
-│   └── test.wav
+│   ├── pcm params.png
+│   ├── test_8000_16_1.pcm
+│   └── test_8000_16_1.wav
 ├── docs
 │   ├── PCM音频数据 - 简书.mhtml
 │   ├── WAV文件格式分析.pdf
