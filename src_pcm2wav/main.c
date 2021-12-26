@@ -16,7 +16,10 @@ int main(int argc, char *argv[])
 	if(argc != 6)
 	{
 		printf("Usage: %s <input.pcm> <pcm sample rate> <pcm sample bits> <pcm sample channels> <output.wav>\n", argv[0]);
-		printf("such as: %s ./audio/test_8000_16_1.pcm 8000 16 1 ./out_8000_16_1.wav\n", argv[0]);
+		printf("examples: \n"
+			   "   %s ./audio/test_8000_16_1.pcm 8000 16 1 ./out_8000_16_1.wav\n"
+			   "   %s ./audio/test_44100_16_2.pcm 44100 16 2 ./out_44100_16_2.wav\n",
+				argv[0], argv[0]);
 		return -1;
 	}
 	printf("\n**************************************\n"

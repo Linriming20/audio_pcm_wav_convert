@@ -13,6 +13,6 @@ wav2pcm: $(WAV2PCM_DIR)/main.c $(WAV2PCM_DIR)/wavreader.c $(WAV2PCM_DIR)/wavread
 	$(CC) $^ $(CFLAG) -o $@
 
 clean :
-	rm -rf pcm2wav wav2pcm
+	rm -rf pcm2wav wav2pcm out*
 .PHONY := clean
 
